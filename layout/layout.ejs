@@ -24,12 +24,23 @@
         <span class="gradient-text">
             <%= config.author || config.title %>
         </span>.
-        Powered by <%- link_to("http://hexo.io/", "Hexo", {external: true})%>
-        Theme
+        Powered by 
+        <span class="gradient-text">
+            <%- link_to("http://hexo.io/", "Hexo", {external: true})%>
+        </span>
+        Theme by 
         <span class="gradient-text">
             <%- link_to("https://github.com/TriDiamond/hexo-theme-obsidian", "Obsidian", {external: true})%>
         </span>
         <small><%- link_to("https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md", 'v'+theme.version, {external: true})%></small>
+        Hosted by
+        <span class="gradient-text">
+            <%- link_to("https://pages.github.com/", "Github Pages", {external: true})%>
+        </span>
+    </p>
+    <p class="copyright" id="copyright">
+        本站总访问量<span id="busuanzi_value_site_pv" class="gradient-text"></span>次 && 
+        本站访客数<span id="busuanzi_value_site_uv" class="gradient-text"></span>人次
     </p>
 </footer>
 <%- partial('_partial/mathjax', null, {cache: true}) %>
