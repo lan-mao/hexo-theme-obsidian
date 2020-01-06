@@ -7,11 +7,11 @@
         <div class="article animated fadeIn">
             <div class="main animated fadeIn">
                 <div class="content animated fadeIn">
-                <% if (page.search || page.type === "search") { %>
+                <% if (page.search || page.title === "search") { %>
                     <%- partial('_partial/search') %>
-                <% } else if (page.type === "tags") { %>
+                <% } else if (page.title === "tags") { %>
                     <%- partial('_partial/tags') %>
-                <% } else if (page.type === 'categories') { %>
+                <% } else if (page.title === 'categories') { %>
                     <%- partial('_partial/categories') %>
                 <% } else { %>
                         <%- page.content %>
