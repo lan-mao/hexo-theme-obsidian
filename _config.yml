@@ -78,7 +78,7 @@ descriptionTwo: "Think like an artist, develop like an artisan"
 descriptionOne: "艺术家思维去思考问题，工匠创造精神去开发"
 
 # If you use google analytics, please fill in the ID
-google_analytics: 
+google_analytics:
 
 # Website favicon
 favicon: /img/favicon.png
@@ -91,11 +91,16 @@ rss: atom.xml
 # ---------------------------------------------------------------
 
 # Auto play article audio
-autoplay: false
+autoplay: true
 
 # default mp3 file
 mp3:
-  - statics/chengdu.mp3
+  - https://lan-mao.gitee.io/statics/Jason%20Mraz%20-%20I%27m%20Yours.mp3
+  - https://lan-mao.gitee.io/statics/Taylor%20Swift%20-%20Ours.mp3
+  - https://lan-mao.gitee.io/statics/Lana%20Del%20Rey%20-%20Video%20Games.mp3
+  - https://lan-mao.gitee.io/statics/Taylor%20Swift%20-%20Enchanted.mp3
+  - https://lan-mao.gitee.io/statics/%E7%84%A6%E8%BF%88%E5%A5%87%20-%20%E4%BD%A0%E6%9B%BE%E6%98%AF%E5%B0%91%E5%B9%B4.mp3
+  - https://lan-mao.gitee.io/statics/%E5%8D%97%E5%BE%81%E5%8C%97%E6%88%98NZBZ%20-%20%E5%A4%A9%E9%AB%98%E8%B7%AF%E8%BF%9C.mp3
 
 # ---------------------------------------------------------------
 # Plugins
@@ -160,7 +165,7 @@ busuanzi:
 
 #Enable social media sharing
 sharejs:
-  enable: true
+  enable: false
   disabled: 'facebook,douban,linkedin,diandian,tencent,google,twitter'
 
 # Use codemirror instead of highlight js for better colors

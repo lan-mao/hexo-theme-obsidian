@@ -22,7 +22,7 @@
     <p class="copyright" id="copyright">
         &copy; <%= date(new Date(), 'YYYY') %>
         <span class="gradient-text">
-            <%= config.author || config.title %>
+            <%- link_to("https://github.com/lan-mao", "懒猫", {external: true})%>
         </span>.
         Powered by 
         <span class="gradient-text">
@@ -40,7 +40,8 @@
     </p>
     <p class="copyright" id="copyright">
         本站总访问量<span id="busuanzi_value_site_pv" class="gradient-text"></span>次 && 
-        本站访客数<span id="busuanzi_value_site_uv" class="gradient-text"></span>人次
+        本站访客数<span id="busuanzi_value_site_uv" class="gradient-text"></span>人次  
+        <a href="http://www.beian.miit.gov.cn" title="工信部备案号" target="_blank" rel="noopener">鲁ICP备<span class="gradient-text">19009995</span>号</a>
     </p>
 </footer>
 <%- partial('_partial/mathjax', null, {cache: true}) %>
