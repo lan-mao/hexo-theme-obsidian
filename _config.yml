@@ -1,7 +1,7 @@
 #! ---------------------------------------------------------------
-#! ▄▀▄ █▀▄ ▄▀▀ ▀ █▀▄ ▀ ▄▀▄ █▄░█ 
-#! █░█ █▀█ ░▀▄ █ █░█ █ █▀█ █░▀█ 
-#! ░▀░ ▀▀░ ▀▀░ ▀ ▀▀░ ▀ ▀░▀ ▀░░▀ 
+#!  ▄▀▄ █▀▄ ▄▀▀ ▀ █▀▄ ▀ ▄▀▄ █▄░█
+#! █░█ █▀█ ░▀▄ █ █░█ █ █▀█ █░▀█
+#!░▀░ ▀▀░ ▀▀░ ▀ ▀▀░ ▀ ▀░▀ ▀░░▀
 #! ᴅᴇsɪɢɴᴇᴅ & ᴄᴏᴅᴇᴅ ʙʏ ᴛʀɪᴅɪᴀᴍᴏɴᴅ
 #! ---------------------------------------------------------------
 #! Theme Obsidian - A dark Hexo theme, it's responsive, simple but elegant.
@@ -13,9 +13,9 @@
 #! ---------------------------------------------------------------
 
 #! ---------------------------------------------------------------
-#! █▄░█ ▄▀▄ ▀█▀ █▀▀ ▄▀▀
-#! █░▀█ █░█ ░█░ █▀▀ ░▀▄ 
-#! ▀░░▀ ░▀░ ░▀░ ▀▀▀ ▀▀░ v1.x
+#!  █▄░█ ▄▀▄ ▀█▀ █▀▀ ▄▀▀
+#! █░▀█ █░█ ░█░ █▀▀ ░▀▄
+#!▀░░▀ ░▀░ ░▀░ ▀▀▀ ▀▀░ v1.x
 #! ---------------------------------------------------------------
 #! Since version `v1.3.5` code block highlight has changed from `highlight.js` to
 #! `codemirror`, but the Hexo default highlight still need to be disabled to take affect.
@@ -32,7 +32,8 @@
 #! ---------------------------------------------------------------
 
 # Theme version
-version: "1.4.3"
+# !! DO NOT EDIT THIS !!
+version: '1.4.4'
 
 # ---------------------------------------------------------------
 # Theme default settings
@@ -47,9 +48,9 @@ menu:
 
 # Page custom titles
 page_titles:
-  categories: "Categories"
-  tags: "Tags"
-  archives: "Archived"
+  categories: 'Categories'
+  tags: 'Tags'
+  archives: 'Archived'
 
 # Social media links
 socials:
@@ -148,12 +149,12 @@ symbols_count_time:
 html_truncate:
   enable: true
   # Characters kept for posts
-  postLength: 100
+  postLength: 250
   # Characters kept for cover posts
   coverLength: 100
   ellipsis: '...'
   # Excluding html tags
-  excludes: ['img','h1']
+  excludes: ['img', 'h1', 'h2']
   # Characters count including white spaces
   keepWhitespaces: true
   # Reserving the last complete word, without breaking the word
@@ -178,3 +179,25 @@ codemirror:
 
 # Enabling mathjax support
 mathjax: true
+
+# custom header HTML
+header_html: ''
+
+# custom footer HTML
+footer_html: '
+<!-- 例：百度统计 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+               var curProtocol = window.location.protocol.split(':')[0];
+               if (curProtocol === 'https') {
+               bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+               }
+               else {
+               bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+               }
+               var s = document.getElementsByTagName("script")[0];
+               s.parentNode.insertBefore(bp, s);
+               })();
+  </script>
+'

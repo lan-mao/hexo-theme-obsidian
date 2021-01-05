@@ -24,11 +24,8 @@
         <span class="gradient-text">
             <%- link_to("https://github.com/lan-mao", "懒猫", {external: true})%>
         </span>.
-        Powered by 
-        <span class="gradient-text">
-            <%- link_to("http://hexo.io/", "Hexo", {external: true})%>
-        </span>
-        Theme by 
+        Powered by <%- link_to("http://hexo.io/", "Hexo", {external: true})%>
+        Theme
         <span class="gradient-text">
             <%- link_to("https://github.com/TriDiamond/hexo-theme-obsidian", "Obsidian", {external: true})%>
         </span>
@@ -46,19 +43,7 @@
 </footer>
 <%- partial('_partial/mathjax', null, {cache: true}) %>
 <%- partial('_partial/scripts', null, {cache: true}) %>
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-    
+
+<%- theme.footer_html %>
+
 </html>

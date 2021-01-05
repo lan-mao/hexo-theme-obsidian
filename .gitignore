@@ -1,5 +1,5 @@
+.DS_Store
 /source/statics/*
 CNAME
 opensource.json
-node_modules/
-layout/_partial/head.ejs
+node_modules
