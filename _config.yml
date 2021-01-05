@@ -74,8 +74,8 @@ scrollbar: true
 keywords: TriDiamond Obsidian
 
 # Website slogans
-descriptionTwo: "Think like an artist, develop like an artisan"
-descriptionOne: "艺术家思维去思考问题，工匠创造精神去开发"
+descriptionTwo: 只有那些疯狂到认为自己可以改变世界的人才能真正地改变世界
+descriptionOne: 这些困难我们总归要跨过去，为什么不是现在呢
 
 # If you use google analytics, please fill in the ID
 google_analytics:
@@ -113,6 +113,7 @@ gitalk:
   autoExpand: true
   clientID: '8678b87961ccb910c165'
   clientSecret: 'd9919b5a800fe54e09bce61db0a39f623e63cde7'
+  accessToken: '392df5ed91661f3e0423556306ec767f207e5ed0'
   repo: 'lan-mao.github.io'
   owner: 'lan-mao'
   admin: ['lan-mao']
@@ -147,12 +148,12 @@ symbols_count_time:
 html_truncate:
   enable: true
   # Characters kept for posts
-  postLength: 250
+  postLength: 100
   # Characters kept for cover posts
   coverLength: 100
   ellipsis: '...'
   # Excluding html tags
-  excludes: ['img', 'h1', 'h2']
+  excludes: ['img','h1']
   # Characters count including white spaces
   keepWhitespaces: true
   # Reserving the last complete word, without breaking the word
